@@ -12,10 +12,9 @@ const connect = function() {
 
   conn.on("connect", () => {
     console.log("Sucessfully connected to the server");
+
     conn.write("Name: VAL");
-    // for (let i = 0; i < 10; i++) {
-    //   setTimeout(() => conn.write("Move: up"), i * 50);
-    // }
+
 
   });
 
@@ -23,6 +22,7 @@ const connect = function() {
     console.log(data);
     // connection.write(`🦜: ${data}`);
     // broadcast(listOfConnections, data);
+
 
     // Send a message to everybody but the sender
     //	betterBroadcast(listOfConnections, data, connection.id);

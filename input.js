@@ -28,8 +28,14 @@ const handleUserInput = function(data) {
     connection.write("Move: down");
   } else if (data === "d") {
     connection.write("Move: right");
+  } else if (data === "q") {
+    connection.write("Say: Watch out!!");
+  } else if (data === "e") {
+    connection.write("Say: THAT is MIIIIINE!");
   }
-
+  // for (let i = 0; i < 10; i++) {
+  //   setTimeout(() => conn.write("Say: here I come"), i * 50);
+  // }
 };
 
 module.exports = setupInput;
